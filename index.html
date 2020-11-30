@@ -7,32 +7,32 @@
   <body>
     <script type="text/javascript">
 
-      const listTasks = [
+      const taskList = [
         {action:'机を片付ける', genre:'掃除'},
         {action:'牛乳を買う', genre:'買い物'},
         {action:'散歩する', genre:'運動'},
       ];
 
-      const listing = () => {
+      const listTasks = () => {
         console.log('=========================');
         console.log('現在持っているタスク一覧');
         console.log('=========================');
 
-        listTasks.forEach((taskObject,number) => {
-          console.log(`${number}：［内容］${listTasks[number].action}、［ジャンル］${listTasks[number].genre}`);
+        taskList.forEach((taskObject,number) => {
+          console.log(`${number}：［内容］${taskList[number].action}、［ジャンル］${taskList[number].genre}`);
         });
       };
 
-      listing();
+      listTasks();
 
       const newTask = prompt('タスクを入力してください');
       const  newGenre = prompt('ジャンルを入力してください');
       const newObject = {action:newTask, genre:newGenre};
-      listTasks.push(newObject);
+      taskList.push(newObject);
 
       alert('新しいタスクを追加しました。');
 
-      listing();
+      listTasks();
 
       prompt('「確認,追加,削除,終了」の4つのいずれかを入力してください');
 
