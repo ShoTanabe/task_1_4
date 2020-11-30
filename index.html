@@ -13,7 +13,7 @@
         {action:'散歩する', genre:'運動'},
       ];
 
-      const listing = () => {
+      const listTasks = () => {
         console.log('=========================');
         console.log('現在持っているタスク一覧');
         console.log('=========================');
@@ -23,7 +23,7 @@
         });
       };
 
-      listing();
+      listTasks();
 
       const newTask = prompt('タスクを入力してください');
       const  newGenre = prompt('ジャンルを入力してください');
@@ -32,7 +32,7 @@
 
       alert('新しいタスクを追加しました。');
 
-      listing();
+      listTasks();
 
       prompt('「確認,追加,削除,終了」の4つのいずれかを入力してください');
 
